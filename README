@@ -1,0 +1,19 @@
+Project 1: MyLittleMalloc by:
+            1) Kush Patel  (Net ID: kp1085)
+            2) Adeela Zaidi (Net ID: Az423)
+
+Description: 
+To Compile the Enter directory Write make in command prompt and then type ./mymalloc to execute.
+
+Test Plan:
+1. malloc() and immediately free() a 1-byte chunk, 120 times.
+
+2. Use malloc() to get 120 1-byte chunks, storing the pointers in an array, then use free() to deallocate the chunks.
+
+3. Randomly choose between
+      •Allocating a 1-byte chunk and storing the pointer in an array
+      •Deallocating one of the chunks in the array (if any)
+    Repeat until you have called malloc() 120 times, then free all remaining allocated chunks.
+    
+4. Allocating 120 chunks together at size same size, then trying to free them separately also immediately malloc with different sizes. Finally, Free all memory
+5. First allocating all the chunks together but with the different sizes, also separately free the memory. 
